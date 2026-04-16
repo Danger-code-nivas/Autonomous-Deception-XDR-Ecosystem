@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Autonomous Deception & XDR Ecosystem</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              cyber: {
+                900: '#050a14', // Deep background
+                800: '#0a1628', // Card background
+                700: '#112240', // Border/Input
+                500: '#00f0ff', // Cyan accent
+                400: '#00ff9d', // Green accent
+                300: '#ff003c', // Red/Alert
+              }
+            },
+            fontFamily: {
+              mono: ['"JetBrains Mono"', 'monospace'],
+              display: ['"Orbitron"', 'sans-serif'],
+            },
+            animation: {
+              'pulse-fast': 'pulse 1.5s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+              'glitch': 'glitch 1s linear infinite',
+              'slide': 'slide 1s linear infinite',
+            },
+            keyframes: {
+              glitch: {
+                '2%, 64%': { transform: 'translate(2px,0) skew(0deg)' },
+                '4%, 60%': { transform: 'translate(-2px,0) skew(0deg)' },
+                '62%': { transform: 'translate(0,0) skew(5deg)' },
+              },
+              slide: {
+                '0%': { backgroundPosition: '0 0' },
+                '100%': { backgroundPosition: '20px 20px' },
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        background-color: #050a14;
+        color: #e2e8f0;
+        font-family: 'JetBrains Mono', monospace;
+      }
+      /* Custom scrollbar for cyber aesthetic */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #0a1628; 
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #112240; 
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #00f0ff; 
+      }
+    </style>
+</head>
+  <body>
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>

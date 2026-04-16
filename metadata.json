@@ -1,0 +1,7 @@
+{
+  "name": "ok test",
+  "description": "A cybersecurity simulation platform featuring a reactive honeypot, intruder tracking, and AI-powered threat analysis using Gemini.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
